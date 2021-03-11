@@ -8,7 +8,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#top">Summary</a>
+                        <a class="nav-link" href="#top">Summary in China</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#case4">{{ case4 }}</a>
@@ -30,15 +30,9 @@
         </nav>
 
         <div class="container">
-            <div class="row mt-5">
+            <div id="top" class="row mt-5">
                 <div class="col text-center">
-                    <h1 id="top">Covid-19 Summary in China</h1>
-                </div>
-            </div>
-
-            <div class="row mt-5">
-                <div class="col text-center">
-                    <h1 id="top">Covid-19 Summary in China</h1>
+                    <h1>Covid-19 Summary in China</h1>
                 </div>
             </div>
 
@@ -67,6 +61,12 @@
                 <div class="col">
                     <h2>{{ case3 }}</h2>
                     <line-chart :chartData="caseRecovered" :options="chartOptions" label="Recovered Cases" :chartColors="recoveredChartColor"></line-chart>
+                </div>
+            </div>
+
+            <div class="row mt-5 bg-warning text-center" v-else>
+                <div class="col">
+                    <h1 class="">API currently Unavailable</h1>
                 </div>
             </div>
 
