@@ -1,24 +1,15 @@
-# multi_dashboard
+# Covid_dashboard
 
-## Project setup
+## Introduction
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+This is a simple webpage that shows Data on Covid-19 in China.
+Data are retrieved from CORONAVIRUS COVID19 API
 ```
 
-### Compiles and minifies for production
+## Framework
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+This project is mainly written with Vue.js
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Demo
+![dashboardDemo](./dashboardDemo.png)
